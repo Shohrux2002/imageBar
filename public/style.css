@@ -1,0 +1,85 @@
+:root {
+  --backColor: rgb(216, 216, 216);
+  --greenColor: rgb(3, 140, 3);
+  --greyBackColor: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+#root {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+  width: 95%;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 4.4rem;
+  color: var(--greenColor);
+}
+.notes {
+  color: var(--greyBackColor);
+}
+
+.search-box,
+.btn {
+  width: 15%;
+  padding: 3rem;
+  border-radius: 1rem;
+  border: 0.5rem solid var(--greenColor);
+  background-color: var(--backColor);
+}
+.search-box {
+  width: 100%;
+  padding: 2rem;
+}
+.search-input {
+  background-color: var(--backColor);
+  width: 80%;
+  border: none;
+  outline: none;
+}
+.carts {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.cart {
+  font-size: 2.4rem;
+  padding: 2rem;
+  background-color: var(--greenColor);
+
+  border-radius: 3rem;
+}
+.area {
+  width: 100%;
+  font-size: 2.4rem;
+  border: none;
+  outline: none;
+  background-color: var(--greenColor);
+}
+.cart__bottom {
+  height: 5rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.date,
+.fa-trash-can-xmark {
+  display: none;
+}
+.save-btn {
+  width: 20%;
+  padding: 1rem;
+}
